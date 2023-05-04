@@ -1,0 +1,10 @@
+:root {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    #f6ebf8 35%,
+    rgb(186, 231, 241) 100%
+  );
+  padding: 1rem;
+}
+
