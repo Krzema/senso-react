@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/brand.png';
 import { FacebookLogo, InstagramLogo } from '@phosphor-icons/react';
 
 function Link({ title }: { title: string }) {
@@ -14,8 +14,8 @@ function Link({ title }: { title: string }) {
 export default function Header() {
   return (
     <header className="flex flex-wrap">
-      <img className="h-16" src={logo} alt="logo" />
-      <div className="ml-auto flex flex-wrap items-center h-full gap-4">
+      <img className="h-28" src={logo} alt="logo" />
+      <div className="ml-auto flex flex-wrap items-center gap-4">
         <ul className="flex">
           <Link title="O mnie" />
           <Link title="Oferta" />
