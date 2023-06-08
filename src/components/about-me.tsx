@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div id="aboutme" className="pt-8">
       <h2 className="text-3xl font-semibold text-center mb-6">O mnie</h2>
       <div className="grid gap-2 md:grid-cols-2">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center mb-4">
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{
