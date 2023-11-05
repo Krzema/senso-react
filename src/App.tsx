@@ -6,6 +6,7 @@ import IconSection from './components/icon-section';
 import AboutMe from './components/about-me';
 import Offer from './components/offer';
 import Contact from './components/contact';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutMe />
       <Offer />
       <Contact />
+      <Footer />
     </Layout>
   );
 }

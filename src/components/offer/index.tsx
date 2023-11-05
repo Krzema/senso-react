@@ -1,11 +1,27 @@
 import PriceItem from './price-item';
 import OfferItem from './offer-item';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function offer() {
+  const offersVar = {
+    visible: {
+      transition: {
+        staggerChildren: 0.5
+      }
+    }
+  };
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
   return (
     <div id="offer" className="pt-8">
       <h2 className="text-3xl font-semibold text-center mb-6">Oferta</h2>
-      <ul className="flex gap-2">
+      <motion.ul
+        ref={ref}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={offersVar}
+        className="grid grid-cols-1 gap-2 md:grid-cols-3">
         <OfferItem title="Zajęcia matematyczne Numicon®" />
         <OfferItem title="Terapia dzieci z dysleksją i trudnościami szkolnymi" />
         <OfferItem
@@ -14,7 +30,7 @@ export default function offer() {
         />
         <OfferItem title="Symultaniczno - Sekwencyjna Nauka Czytania®" />
         <OfferItem title="Zajęcia sensoryczne Smykomultisensoryka®" />
-      </ul>
+      </motion.ul>
       <h2 className="text-3xl font-semibold text-center mb-6 mt-8">Cennik</h2>
       <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <PriceItem title="Zajęcia terapeutyczne" price="100" duration="45" />

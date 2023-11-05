@@ -9,8 +9,8 @@ export function IconItem({
 }) {
   return (
     <div className="flex flex-col items-center">
-      <i className="text-6xl text-sky-500">{children}</i>
-      <p className="text-xl font-semibold">{title}</p>
+      <i className="text-7xl text-sky-500">{children}</i>
+      <p className="text-lg font-semibold capitalize"><span className='text-sky-700'>{title.substring(0,1)}</span>{title.substring(1)}</p>
     </div>
   );
 }
