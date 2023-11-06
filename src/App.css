@@ -4,7 +4,4 @@
 
 body {
   font-family: 'Quicksand';
-
-  overflow-x: hidden;
-  height: calc(2 * 100vh);
 }
