@@ -9,7 +9,7 @@ export function IconItem({
 }) {
   return (
     <div className="flex flex-col items-center">
-      <i className="text-7xl text-sky-500">{children}</i>
+      <i className="text-4xl sm:text-7xl text-sky-500">{children}</i>
       <p className="text-lg font-semibold capitalize"><span className='text-sky-700'>{title.substring(0,1)}</span>{title.substring(1)}</p>
     </div>
   );
@@ -17,7 +17,7 @@ export function IconItem({
 
 export default function IconSection() {
   return (
-    <div className="flex flex-wrap justify-around items-center h-36 ">
+    <div className="flex flex-wrap justify-around items-center">
       <IconItem title="kreatywnie">
         <Lightbulb weight="duotone" />
       </IconItem>

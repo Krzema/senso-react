@@ -12,7 +12,7 @@ export default function OfferItem({ title }: { title: string }) {
     <motion.li
       key={title}
       variants={item}
-      className="bg-indigo-100 text-center flex items-center justify-center text-sm font-semibold text-sky-800 p-2 rounded-lg h-24"
+      className="bg-indigo-100 text-center flex items-center justify-center text-sm font-semibold text-sky-800 p-2 rounded-lg h-24 border border-slate-300 shadow-md"
     >
       {title}
     </motion.li>

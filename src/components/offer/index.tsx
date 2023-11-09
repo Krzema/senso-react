@@ -32,11 +32,16 @@ export default function offer() {
         <OfferItem title="Zajęcia sensoryczne Smykomultisensoryka®" />
       </motion.ul>
       <h2 className="text-3xl font-semibold text-center mb-6 mt-8">Cennik</h2>
-      <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <h3 className="text-xl text-center m-3">Zajęcia terapeutyczne</h3>
+      <ul className="grid grid-cols-2 gap-4 sm:mx-28">
         <PriceItem title="Zajęcia terapeutyczne" price="100" duration="45" />
         <PriceItem title="Zajęcia terapeutyczne" price="120" duration="60" />
         <PriceItem title="Zajęcia terapeutyczne" price="180" duration="120" />
         <PriceItem title="Konsultacja" price="120" duration="60" />
+      </ul>
+      <h3 className="text-xl text-center m-3">Fizjoterapia</h3>
+      <ul className="grid gap-4 mx-20 sm:mx-56">
+        <PriceItem title="Fizjoterapia" price="150" duration="60" />
       </ul>
     </div>
   );

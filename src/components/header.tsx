@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="flex flex-wrap h-28 items-center justify-center">
       <a href="#">
-        <img className="h-12 sm:h-20 md:h-28" src={logo} alt="logo" />
+        <img className="h-24 sm:h-20 md:h-28" src={logo} alt="logo" />
       </a>
       <div className="sm:ml-auto flex flex-wrap items-center gap-4">
         <ul className="flex">
@@ -23,7 +23,7 @@ export default function Header() {
           <Link title="Oferta" href="#offer" />
           <Link title="Kontakt" href="#contact" />
         </ul>
-        <div className="hidden sm:flex">
+        <div className="flex">
           <a href="https://www.facebook.com/sensoslowka">
             <FacebookLogo
               className="hover:text-sky-500"

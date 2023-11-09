@@ -27,7 +27,7 @@ export default function PriceItem({
     },
   }
   return (
-    <li className="border border-slate-900 p-3 rounded-lg grid grid-row-3 gap-1 text-center bg-violet-100 cursor-default"
+    <li className="border border-slate-300 p-3 shadow-md rounded-lg grid grid-row-3 gap-1 text-center bg-violet-100 cursor-default"
       onMouseEnter={() => setOverState(true)} >
       <div className="text-sm">{title}</div>
       <div className="text-2xl font-semibold text-sky-800 flex justify-center items-center gap-2 ">

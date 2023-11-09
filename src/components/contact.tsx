@@ -5,7 +5,7 @@ export default function Ofert() {
     <div id="contact" className="pt-8">
       <h2 className="text-3xl font-semibold text-center mb-6">Kontakt</h2>
       <div className='grid gap-2 text-center '>
-        <div className='bg-gray-50 rounded-xl border border-gray-800'>
+        <div className='bg-gray-50 rounded-xl border border-slate-300 shadow-md '>
           <div className="flex flex-col gap-5 text-xl items-center p-5">
             <div className='flex gap-2 items-center'>
               <MapPin className='text-green-600 text-3xl font-bold ' weight="duotone" />
